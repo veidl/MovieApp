@@ -1,4 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="movie_genre">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">17dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginStart">122dp</item>
+    </style>
+
+    <style name="story_heading">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="movie_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">120dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_marginEnd">120dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

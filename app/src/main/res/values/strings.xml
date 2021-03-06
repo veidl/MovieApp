@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MovieApp</string>
+    <string name="image_text">myAwesomeImage</string>
+    <string name="floating_action_text">floating_action</string>
+    <string name="creators">Creators:</string>
+    <string name="actors">Actors:</string>
+    <string name="story">Story</string>
 </resources>
