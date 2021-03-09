@@ -7,7 +7,7 @@ plugins {
 android {
 
     dataBinding {
-        enabled = true
+        enabled true
     }
 
     compileSdkVersion 30

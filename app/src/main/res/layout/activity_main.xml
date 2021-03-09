@@ -4,9 +4,10 @@
         xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
                 name="movie"
-                type="com.example.movieapp.movie.Movie" />
+                type="com.example.movieapp.movie.data.Movie" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
