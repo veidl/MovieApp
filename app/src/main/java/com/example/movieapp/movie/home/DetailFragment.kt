@@ -50,4 +50,5 @@ class DetailFragment : Fragment() {
             actors = mutableListOf("Anya Taylor, Chloe someone")
         )
     }
+
 }

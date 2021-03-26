@@ -3,5 +3,8 @@
         xmlns:android="http://schemas.android.com/apk/res/android">
     <item
             android:title="About"
-            android:id="@+id/navbar_about" />
+            android:id="@+id/aboutFragment" />
+    <item
+            android:title="Watchlist"
+            android:id="@+id/watchlistFragment" />
 </menu>
