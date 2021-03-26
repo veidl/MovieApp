@@ -1,5 +1,7 @@
 package com.example.movieapp.movie.data
 
+import java.io.Serializable
+
 data class Movie(
     val title: String,
     val description: String,
@@ -8,6 +10,7 @@ data class Movie(
     val creators: MutableList<String>,
     val authors: MutableList<String>,
     val actors: MutableList<String>
-) {
+) : Serializable {
+
 
 }
