@@ -11,7 +11,7 @@
             android:layout_marginTop="10dp">
 
         <TextView
-                android:text="Title"
+                android:text="@string/txt_title"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_home_title"
@@ -19,12 +19,14 @@
                 android:layout_marginEnd="50dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginStart="10dp"
-                android:textColor="#FBFBFB" />
+                android:textColor="#FBFBFB"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
         <TextView
-                android:text="Creator"
+                android:text="@string/txt_creator"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_home_creators"
@@ -33,10 +35,12 @@
                 android:layout_marginEnd="50dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginStart="10dp"
-                android:textColor="#F3F3F3" />
+                android:textColor="#F3F3F3"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp" />
 
         <TextView
-                android:text="Actor"
+                android:text="@string/txt_actor"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_home_actors"
@@ -45,19 +49,30 @@
                 android:layout_marginEnd="50dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginStart="10dp"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp" />
 
         <Button
                 android:text="@string/see_details"
-                android:layout_width="140dp"
-                android:layout_height="40dp"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
                 android:id="@+id/btn_home_details"
                 app:layout_constraintTop_toBottomOf="@+id/txt_home_actors"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="190dp"
+                android:layout_marginStart="280dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:textColorHint="#C50404"
                 android:textColor="#FBFBFB"
-                app:backgroundTint="#ECAF15" />
+                app:backgroundTint="#FF9800"
+                android:textSize="14sp"
+                android:paddingLeft="0sp"
+                android:paddingTop="0sp"
+                android:paddingRight="0sp"
+                app:iconPadding="0sp"
+                android:padding="0sp"
+                android:paddingBottom="0sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="15dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

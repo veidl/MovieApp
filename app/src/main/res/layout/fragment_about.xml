@@ -4,23 +4,22 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".movie.home.AboutFragment">
+        tools:context=".movie.fragments.AboutFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         <TextView
-                android:text="This is my about text"
-                android:layout_width="wrap_content"
+                android:text="@string/txt_about"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView"
+                android:id="@+id/txt_about_text"
+                android:textColor="#EFEFEF"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="100dp"
-                android:layout_marginEnd="181dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:textColor="#EFEFEF" />
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="300dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

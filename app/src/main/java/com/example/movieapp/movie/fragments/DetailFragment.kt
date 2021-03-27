@@ -1,4 +1,4 @@
-package com.example.movieapp.movie.home
+package com.example.movieapp.movie.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -26,7 +26,7 @@ class DetailFragment : Fragment() {
             false
         )
 
-        binding.movie = arguments?.getSerializable("movie") as Movie
+        binding.movie = DetailFragmentArgs.fromBundle(requireArguments()).movie
 
         binding.floatingButton.setOnClickListener {
             Toast.makeText(
