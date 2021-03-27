@@ -37,6 +37,16 @@ class HomeFragment : Fragment() {
             initMovie(),
             initMovie(),
             initMovie(),
+            initMovie(),
+            initMovie(),
+            initMovie(),
+            initMovie(),
+            initMovie(),
+            initMovie(),
+            initMovie(),
+            initMovie(),
+            initMovie(),
+            initMovie(),
             initMovie()
         )
 

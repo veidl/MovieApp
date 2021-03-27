@@ -14,7 +14,8 @@
     <string name="txt_actor">Actor</string>
     <string name="txt_movie_app">Movie App</string>
     <string name="txt_logo_text">Logo for movie app</string>
-    <string name="txt_about">This is an awesome MovieApp created by Veidl. All rights reserved. Don\'t touch it.</string>
+    <string name="txt_about">This is an awesome MovieApp created by Veidl. All rights reserved.\nDon\'t touch it.</string>
     <string name="txt_about_short">About</string>
     <string name="txt_watchlist">Watchlist</string>
+    <string name="txt_warning_logo">warning logo</string>
 </resources>
