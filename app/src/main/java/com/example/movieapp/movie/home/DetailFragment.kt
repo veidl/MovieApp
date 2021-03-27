@@ -26,7 +26,7 @@ class DetailFragment : Fragment() {
             false
         )
 
-        binding.movie = initMovie()
+        binding.movie = arguments?.getSerializable("movie") as Movie
 
         binding.floatingButton.setOnClickListener {
             Toast.makeText(
@@ -39,16 +39,6 @@ class DetailFragment : Fragment() {
 
     }
 
-    private fun initMovie(): Movie {
-        return Movie(
-            title = "The Dark Knight",
-            description = "wow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such wow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviea cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool moviewow such a cool movie",
-            rating = 1F,
-            genres = mutableListOf("Action", "Drama"),
-            creators = mutableListOf("Christian Bale", "John Wick"),
-            authors = mutableListOf("woher? weist ich das"),
-            actors = mutableListOf("Anya Taylor, Chloe someone")
-        )
-    }
+
 
 }

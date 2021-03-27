@@ -24,15 +24,15 @@ class HomeFragment : Fragment() {
             false
         )
 
-        binding.movie = initMovie()
+        val adapter = HomeAdapter()
+
+        binding.movieList.adapter = adapter
+
+        adapter.data = listOf(initMovie(), initMovie().copy(description = "lol"), initMovie().copy(title = "sahil ist ein gott"), initMovie(), initMovie(), initMovie(), initMovie(), initMovie())
 
         setHasOptionsMenu(true)
 
         return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        insertNestedFragments()
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
@@ -42,17 +42,6 @@ class HomeFragment : Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return NavigationUI.onNavDestinationSelected(item, requireView().findNavController()) || super.onOptionsItemSelected(item)
-    }
-
-    private fun insertNestedFragments() {
-        val bundle = Bundle()
-        bundle.putSerializable("movie", initMovie())
-
-        val homeItemsFragment = HomeItemsFragment()
-        homeItemsFragment.arguments = bundle
-
-        childFragmentManager.beginTransaction().replace(R.id.homeItemFragment, homeItemsFragment)
-            .commit()
     }
 
     private fun initMovie(): Movie {

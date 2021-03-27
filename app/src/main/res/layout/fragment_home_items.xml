@@ -2,12 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <data>
 
-        <variable
-                name="movie"
-                type="com.example.movieapp.movie.data.Movie" />
-    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -16,7 +11,7 @@
             android:layout_marginTop="10dp">
 
         <TextView
-                android:text="@{movie.title}"
+                android:text="Title"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_home_title"
@@ -29,7 +24,7 @@
                 android:textColor="#FBFBFB" />
 
         <TextView
-                android:text="@{movie.creators}"
+                android:text="Creator"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_home_creators"
@@ -41,7 +36,7 @@
                 android:textColor="#F3F3F3" />
 
         <TextView
-                android:text="@{movie.actors}"
+                android:text="Actor"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_home_actors"

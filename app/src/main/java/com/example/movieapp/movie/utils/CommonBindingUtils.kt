@@ -3,6 +3,8 @@ package com.example.movieapp.movie.utils
 import android.widget.RatingBar
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
+import androidx.recyclerview.widget.RecyclerView
+import com.example.movieapp.movie.data.Movie
 
 object CommonBindingUtil {
 
