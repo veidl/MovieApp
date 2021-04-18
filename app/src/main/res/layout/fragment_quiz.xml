@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+                name="quizViewModel"
+                type="com.example.movieapp.quiz.viewmodel.QuizViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@color/black"
+            android:id="@+id/constaintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".QuizFragment">
+
+        <TextView
+                android:id="@+id/currentQuestionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@{String.format(@string/question_progress, quizViewModel.index + 1, quizViewModel.questions.size())}"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+                android:id="@+id/questionText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@{quizViewModel.currentQuestion.questionText}"
+                app:layout_constraintBottom_toTopOf="@+id/answerBox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="#FFFFFF" />
+
+        <TextView
+                android:text="@{quizViewModel.time}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_timer"
+                app:layout_constraintTop_toBottomOf="@+id/answerBox"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        <RadioGroup
+                android:id="@+id/answerBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnNext"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionText">
+
+            <RadioButton
+                    android:id="@+id/answer1"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="@{quizViewModel.currentQuestion.answers.get(0).answerText}"
+                    app:buttonTint="#FF9800" />
+
+            <RadioButton
+                    android:id="@+id/answer2"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="@{quizViewModel.currentQuestion.answers.get(1).answerText}"
+                    app:buttonTint="#FF9800" />
+
+            <RadioButton
+                    android:id="@+id/answer3"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="@{quizViewModel.currentQuestion.answers.get(2).answerText}"
+                    app:buttonTint="#FF9800" />
+
+            <RadioButton
+                    android:id="@+id/answer4"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="@{quizViewModel.currentQuestion.answers.get(3).answerText}"
+                    app:buttonTint="#FF9800" />
+        </RadioGroup>
+
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNext"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/txt_quiz_next"
+                app:backgroundTint="#FF9800"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

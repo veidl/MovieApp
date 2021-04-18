@@ -77,7 +77,7 @@ class HomeFragment : Fragment() {
             authors = mutableListOf("woher? weist ich das"),
             actors = mutableListOf("Anya Taylor, Chloe someone")
         )
-        movie.rating = 3F
+        movie.rating = 3.0F
         return movie
     }
 }
