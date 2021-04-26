@@ -6,11 +6,9 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.movieapp.databinding.ActivityMainBinding
-import com.example.movieapp.quiz.fragment.QuizFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -44,28 +42,31 @@ class MainActivity : AppCompatActivity() {
         Log.i("MainActivity", "onStart")
     }
 
-    override fun onPause() {
-        super.onPause()
-        Log.i("MainActivity", "onPause")
-    }
-
     override fun onResume() {
         super.onResume()
         Log.i("MainActivity", "onResume")
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.i("MainActivity", "onDestroy")
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-        Log.i("MainActivity", "onRestart")
+    override fun onPause() {
+        super.onPause()
+        Log.i("MainActivity", "onPause")
     }
 
     override fun onStop() {
         super.onStop()
         Log.i("MainActivity", "onStop")
+    }
+
+    /**
+     * called from onStop() - if user returns to activity
+     */
+    override fun onRestart() {
+        super.onRestart()
+        Log.i("MainActivity", "onRestart")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.i("MainActivity", "onDestroy")
     }
 }

@@ -4,7 +4,6 @@
         xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
                 name="quizViewModel"
                 type="com.example.movieapp.quiz.viewmodel.QuizViewModel" />

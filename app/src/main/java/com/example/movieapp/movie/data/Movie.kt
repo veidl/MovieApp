@@ -19,6 +19,4 @@ data class Movie(
             if (value in 0.0..5.0) field = value
             else throw IllegalArgumentException("Rating must be between 0 and 5 Stars")
         }
-
-
 }

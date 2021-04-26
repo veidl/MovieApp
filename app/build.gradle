@@ -5,8 +5,6 @@ plugins {
     id 'androidx.navigation.safeargs'
 }
 
-//apply plugin: 'androidx.navigation.safeargs'
-
 android {
 
     buildFeatures {
