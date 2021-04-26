@@ -1,5 +1,7 @@
 package com.example.movieapp.movie.data
 
+import androidx.annotation.DrawableRes
+import com.example.movieapp.R
 import java.io.Serializable
 
 data class Movie(
@@ -8,7 +10,8 @@ data class Movie(
     val genres: MutableList<String>? = mutableListOf("No Genres available"),
     val creators: MutableList<String>,
     val authors: MutableList<String>,
-    val actors: MutableList<String>
+    val actors: MutableList<String>,
+    @DrawableRes val img: Int? = R.drawable.fimklappe
 ) : Serializable {
 
     var rating: Float = 0.0F

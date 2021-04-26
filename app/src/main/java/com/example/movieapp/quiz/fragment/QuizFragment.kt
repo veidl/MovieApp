@@ -20,7 +20,6 @@ class QuizFragment : Fragment() {
 
     private lateinit var binding: FragmentQuizBinding
     private lateinit var viewModel: QuizViewModel
-
     private var timeLeft: Long = 0L
 
     override fun onCreateView(

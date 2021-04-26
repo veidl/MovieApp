@@ -10,8 +10,6 @@ import com.example.movieapp.quiz.data.Question
 import com.example.movieapp.quiz.data.QuestionCatalogue
 
 class QuizViewModel : ViewModel() {
-
-
     private val _questions = MutableLiveData<MutableList<Question>>()
     val questions: LiveData<MutableList<Question>>
         get() = _questions

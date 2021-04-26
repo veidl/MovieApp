@@ -1,8 +1,10 @@
 package com.example.movieapp.movie.utils
 
 import android.text.format.DateUtils
+import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
+import androidx.annotation.DrawableRes
 import androidx.core.content.ContextCompat
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -17,12 +19,12 @@ object CommonBindingUtil {
         view.text = text.joinToString(", ")
     }
 
-    @BindingAdapter("android:rating")
-    @JvmStatic
-    fun setRating(ratingBar: RatingBar, rating: Float) {
-        if (rating in 0.0..5.0)
-            ratingBar.rating = rating
-    }
+//    @BindingAdapter("android:rating")
+//    @JvmStatic
+//    fun setRating(ratingBar: RatingBar, rating: Float) {
+//        if (rating in 0.0..5.0)
+//            ratingBar.rating = rating
+//    }
 
     @BindingAdapter("android:text")
     @JvmStatic
@@ -33,5 +35,11 @@ object CommonBindingUtil {
             view.setTextColor(ContextCompat.getColor(view.context, R.color.red))
         else
             view.setTextColor(ContextCompat.getColor(view.context, R.color.white))
+    }
+
+    @BindingAdapter("src")
+    @JvmStatic
+    fun setImageDrawable(view: ImageView, @DrawableRes drawableId: Int) {
+        view.setImageResource(drawableId)
     }
 }
