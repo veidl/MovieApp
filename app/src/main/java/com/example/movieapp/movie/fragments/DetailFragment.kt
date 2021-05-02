@@ -36,7 +36,6 @@ class DetailFragment : Fragment() {
             ).show()
         }
         return binding.root
-
     }
 
 

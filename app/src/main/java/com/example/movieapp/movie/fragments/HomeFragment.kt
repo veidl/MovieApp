@@ -31,11 +31,11 @@ class HomeFragment : Fragment() {
 
         adapter.data = listOf(
             initQueensGambit(),
+            initTheDarkKnight(),
             initQueensGambit(),
             initQueensGambit(),
             initQueensGambit(),
-            initQueensGambit(),
-            initTheDarkKnight()
+            initQueensGambit()
         )
 
         setHasOptionsMenu(true)
