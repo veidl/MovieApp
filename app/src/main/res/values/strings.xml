@@ -22,4 +22,7 @@
     <string name="question_progress">Question %d/%d</string>
     <string name="default_score">%d/%d</string>
     <string name="restart">Restart</string>
+    <string name="remove">remove</string>
+    <string name="edit">edit</string>
+    <string name="my_notes">Your notes: %s</string>
 </resources>
