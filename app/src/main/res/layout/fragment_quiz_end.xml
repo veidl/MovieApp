@@ -22,7 +22,7 @@
 
         <TextView
                 android:id="@+id/txt_score"
-                android:textColor="#FF9800"
+                android:textColor="#F8972F"
                 android:layout_width="200dp"
                 android:layout_height="40dp"
                 android:text="@string/txt_quiz_end_end_score"
@@ -59,7 +59,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginTop="80dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:rippleColor="#FF9800"
+                app:rippleColor="#F8972F"
                 android:background="#FFFFFF"
                 app:backgroundTint="#FF9800" />
     </androidx.constraintlayout.widget.ConstraintLayout>

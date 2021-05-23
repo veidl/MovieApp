@@ -69,7 +69,7 @@
                     android:textColor="@color/white"
                     android:layout_height="wrap_content"
                     android:text="@{quizViewModel.currentQuestion.answers.get(0).answerText}"
-                    app:buttonTint="#FF9800" />
+                    app:buttonTint="#F8972F" />
 
             <RadioButton
                     android:id="@+id/answer2"
@@ -77,7 +77,7 @@
                     android:textColor="@color/white"
                     android:layout_height="wrap_content"
                     android:text="@{quizViewModel.currentQuestion.answers.get(1).answerText}"
-                    app:buttonTint="#FF9800" />
+                    app:buttonTint="#F8972F" />
 
             <RadioButton
                     android:id="@+id/answer3"
@@ -85,7 +85,7 @@
                     android:textColor="@color/white"
                     android:layout_height="wrap_content"
                     android:text="@{quizViewModel.currentQuestion.answers.get(2).answerText}"
-                    app:buttonTint="#FF9800" />
+                    app:buttonTint="#F8972F" />
 
             <RadioButton
                     android:id="@+id/answer4"
@@ -93,7 +93,7 @@
                     android:textColor="@color/white"
                     android:layout_height="wrap_content"
                     android:text="@{quizViewModel.currentQuestion.answers.get(3).answerText}"
-                    app:buttonTint="#FF9800" />
+                    app:buttonTint="#F8972F" />
         </RadioGroup>
 
 
@@ -104,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:text="@string/txt_quiz_next"
-                app:backgroundTint="#FF9800"
+                app:backgroundTint="#F8972F"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />

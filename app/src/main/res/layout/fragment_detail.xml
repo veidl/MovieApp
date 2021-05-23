@@ -29,7 +29,7 @@
                 tools:ignore="VectorDrawableCompat"
                 android:contentDescription="@string/floating_action_text"
                 app:rippleColor="#E6DFDF"
-                app:backgroundTint="#FF9800" />
+                app:backgroundTint="#F8972F" />
 
         <ImageView
                 android:layout_width="153dp"

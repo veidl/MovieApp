@@ -6,7 +6,7 @@ class TypeConverter {
 
     @TypeConverter
     fun fromArrayList(list: MutableList<String>): String {
-        return list.joinToString { "," }
+        return list.joinToString(",")
     }
 
     @TypeConverter
